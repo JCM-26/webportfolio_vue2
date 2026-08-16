@@ -1,0 +1,194 @@
+       :root {
+            --emerald-primary: #059669;
+            --emerald-light: #10b981;
+            --emerald-dark: #065f46;
+            --emerald-bg-light: #f0fdf4;
+            --dark-bg: #0f172a;
+            --dark-card: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar Customization */
+        .navbar {
+            background-color: rgba(15, 23, 42, 0.95) !important;
+            backdrop-filter: blur(10px);
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: var(--emerald-light) !important;
+        }
+        .navbar-toggler {
+            border-color: var(--emerald-light);
+        }
+        .navbar-toggler-icon {
+            filter: invert(1) sepia(1) saturate(5) hue-rotate(100deg);
+        }
+
+        /* Landing/Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #1e293b 100%);
+            color: #ffffff;
+            padding: 140px 0 100px;
+        }
+        .hero-img {
+            border: 4px solid var(--emerald-light);
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.4);
+            object-fit: cover;
+            width: 260px;
+            height: 290px;
+        }
+        .text-emerald {
+            color: var(--emerald-light) !important;
+        }
+        .btn-emerald {
+            background-color: var(--emerald-primary);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-emerald:hover {
+            background-color: var(--emerald-dark);
+            color: white;
+            transform: translateY(-2px);
+        }
+        .btn-outline-emerald {
+            border-color: var(--emerald-light);
+            color: var(--emerald-light);
+            transition: all 0.3s ease;
+        }
+        .btn-outline-emerald:hover {
+            background-color: var(--emerald-light);
+            color: var(--dark-bg);
+            transform: translateY(-2px);
+        }
+
+        /* Section Headings */
+        .section-title {
+            position: relative;
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--emerald-primary);
+        }
+        .section-title.center::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Projects Section */
+        .project-card {
+            background-color: #ffffff;
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            height: 100%; /* Ensures equal sizes */
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            padding: 10px;
+        }
+
+        .project-imgs{
+            height: 200px;
+        }
+
+        .card-title{
+            margin: 10px 0;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(5, 150, 105, 0.15);
+            border-color: var(--emerald-light);
+        }
+        .project-img-placeholder {
+            background: linear-gradient(45deg, var(--emerald-dark), var(--emerald-primary));
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            border-radius: 5px;
+        }
+        .project-card .card-body {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .project-card .btn {
+            margin-top: auto; /* Pushes button to bottom of equal-sized cards */
+        }
+
+        /* Tools Section */
+        .tools-section {
+            background-color: var(--emerald-bg-light);
+        }
+        .tool-badge {
+            background-color: #ffffff;
+            border: 1px solid rgba(5, 150, 105, 0.2);
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            transition: all 0.2s ease;
+        }
+        .tool-badge:hover {
+            background-color: var(--emerald-primary);
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+        .tool-badge i {
+            color: var(--emerald-primary);
+            font-size: 1.3rem;
+        }
+        .tool-badge:hover i {
+            color: #ffffff;
+        }
+
+        /* Contact Section */
+        .contact-icon-box {
+            width: 50px;
+            height: 50px;
+            background-color: var(--emerald-bg-light);
+            color: var(--emerald-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        .form-control:focus {
+            border-color: var(--emerald-light);
+            box-shadow: 0 0 0 0.25px rgba(16, 185, 129, 0.5);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-bg);
+            color: #94a3b8;
+        }
+        footer a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: var(--emerald-light);
+        }
